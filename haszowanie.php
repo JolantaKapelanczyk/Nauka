@@ -31,7 +31,7 @@ echo'<form action="haszowanie.php" method="POST">
 
 // wpisanie do bazy
 $polacz= new mysqli('localhost','root','','szyfr');
-$wpisz = $polacz->query("INSERT INTO `dane_szyf` SET login='$log', haslo='$has'");
+$wpisz = $polacz->query("INSERT INTO dane_szyf SET login='$log', haslo='$has'");
 if($wpisz)
 echo"dane wpisane <br /><br />";
 
