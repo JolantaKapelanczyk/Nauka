@@ -61,9 +61,11 @@ echo '<form action ="#" method = "POST">
 	 }
 
  $polaczenie=new mysqli('localhost','root','','pole_wyb');
- $pdo=$polaczenie-> query("SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
+   // kodowanie  polskich znaków w bazie danych
+ $polaczenie-> query("SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
  //lub: $db -> query("SET NAMES 'utf8'");
  $zapis=$polaczenie->query("INSERT INTO warsztaty SET Warsztat_1='$w1',Warsztat_2='$w2',Warsztat_3='$w3',Warsztat_4='$w4',Warsztat_5='$w5'");
+ 
 }
- echo '<body><html>';
+ echo '</body></html>';
 ?>
