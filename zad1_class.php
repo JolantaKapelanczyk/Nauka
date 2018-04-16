@@ -25,7 +25,7 @@ echo '<html><head></head><body>';
 						echo " zła nazwa figury";
 		}
 		public function tr($a,$b,$c){ 
-			if($a+$b>$c && $a+$b>$c && $a+$b>$c)
+			if($a+$b>$c && $a+$c>$b && $c+$b>$a)
 			{
 					$p=($a+$b+$c)/2;
 					$pole=sqrt($p*($p-$a)*($p-$b)*($p-$c));
